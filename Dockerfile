@@ -1,7 +1,3 @@
-FROM openjdk:17-jdk-alpline
-MAINTAINER Vadim Kharovyuk
-COPY target/DokerConnect-0.0.1-SNAPSHOT.jar  DokertCon.jar
-
-EXPOSE 2525
-
-ENTRYPOINT ["java", "-jar","/DokerConnect.jar"]
+FROM amazoncorretto:17-alpine-jdk
+COPY /target/DokerConnect-0.0.1-SNAPSHOT.jar DokerConnect-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar","/DokerConnect-0.0.1-SNAPSHOT.jar"]
