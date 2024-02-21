@@ -11,6 +11,9 @@ public class DokerConnectApplication {
 
 
         //docker build -t myapp:1.0 .
+        //docker image list
+
+        //docker run -p 2525:2525 --name mywebserver myapp:1.0
     }
 
 }
